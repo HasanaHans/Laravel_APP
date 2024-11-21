@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222; 
+}
+
+.menu-items-container {
+    text-align: left; 
+    margin-left: 150px; 
+    margin-right: 150px;
+    width: 80%; 
+}
+
+.menu-item {
+    margin-bottom: 15px;
+    padding: 10px 0; 
+    border-bottom: 1px solid #050505; 
+}
+
+.menu-item a {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px; 
+}
+
+.menu-item .price {
+    font-size: 1.3em;
+    color: #0073ff; 
+}
+
+.menu-item p {
+    font-size: 1.1em;
+    color: #555;
+    margin-left: 20px; 
+    margin-top: 5px; 
+}
