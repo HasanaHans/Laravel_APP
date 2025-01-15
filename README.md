@@ -1,66 +1,85 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Assignment 1: Breakfast Menu Application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Scenario
 
-## About Laravel
+This project is a Laravel-based application designed to manage and display a menu of breakfast items. Users can:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- View items.
+- Add, edit, or delete items.
+- Search for items.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Functionality
 
-## Learning Laravel
+### 1. Homepage
+- **Display the Menu**: The homepage showcases the list of breakfast items.
+- Each item includes:
+  - Name.
+  - Description (shown by design to provide immediate details, as a menu should be informative at first glance).
+  - Price.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 2. Add New Item
+- A form allows users to add new items with the following fields:
+  1. **Product**: The name of the item.
+  2. **Description**: A brief explanation of the item.
+  3. **Price**: The cost of the item.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 3. Edit/Delete
+- Items can be:
+  - Updated directly from the list.
+  - Deleted from the list with ease.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 4. About Us Page
+- A simple page providing information about the application or its creators.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Additional Features
 
-### Premium Partners
+### 1. Form Validation
+- **Server-Side Validation**:
+  - Ensures that user inputs are secure and accurate.
+  - For example:
+    - The product name must not exceed 255 characters.
+    - The price must be numeric and greater than zero.
+- **User-Friendly Error Messages**:
+  - Messages clearly indicate any issues with the form inputs.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### 2. Blade Functionality
+- A **layout component** ensures consistent design and structure across all pages.
 
-## Contributing
+### 3. Search Implementation
+- **Search Functionality**:
+  - Implemented in the `HalwaController`.
+  - Designed to allow partial matches for better user experience.
+- **Dynamic Results**:
+  - Search results are displayed on a dedicated results page.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 4. Error Handling
+- User input errors are handled gracefully using Laravel’s built-in error handling features.
+- Users receive feedback if input fields are incomplete or invalid.
 
-## Code of Conduct
+### 5. Ambitious CSS
+- **User-Friendly Design**:
+  - Buttons have a rounded look.
+  - Button colors change when hovered over to provide interactive feedback.
+- **Organized CSS**:
+  - Buttons with shared styles are grouped under a single element.
+  - Unique elements are styled individually with specific identifiers.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 6. Good Practice
+- **Resource Organization**:
+  - Views, controllers, and routes are logically structured for easy maintenance.
+- **Route Naming**:
+  - Routes are named, making it easier to reference them in the application.
+- **Styling**:
+  - Consistent and modular CSS improves maintainability and scalability.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Conclusion
 
-## License
+This Laravel-based application showcases several core concepts, including form validation, Blade components, dynamic search functionality, and CSS styling. It follows good development practices such as resource organization and route naming to ensure a high-quality user experience and maintainable codebase.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---

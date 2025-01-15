@@ -1,6 +1,6 @@
 <x-layout title="All menu items">
 <div class="menu-items-container">
-  <h1>Breakfast Menu</h1>
+  <h1 class="text-3xl black-500">Breakfast Menu</h1>
 
   @foreach ($Halwa as $halwa)
       <div class="menu-item">
