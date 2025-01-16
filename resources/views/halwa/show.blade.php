@@ -5,6 +5,7 @@
     <p class="show-page-price">Price: £{{$halwa->Price}}</p>
 
     <div class="action-buttons">
+    @can('edit')
         <a href="/halwa/{{$halwa->id}}/edit" class="edit-button-link">
             <button class="edit-btn">Edit</button>
         </a>
@@ -14,5 +15,6 @@
             <button type="submit" class="delete-btn" onclick="return confirm('Are you sure you want to delete this item?')">Delete</button>
         </form>
     </div>
+    @endcan
 </x-layout>
 
